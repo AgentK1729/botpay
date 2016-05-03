@@ -7,3 +7,4 @@ static==0.4
 wsgiref==0.1.2
 djangorestframework==3.2.4
 paypalrestsdk==1.11.5
+cffi==1.1.2
