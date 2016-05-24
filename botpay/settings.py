@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'botpay.chatbot',
+	'botpay.banker',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -88,3 +90,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticroot")
+
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'botpay/static'),)
+
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'botpay/templates'),)
